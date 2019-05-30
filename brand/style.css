@@ -413,20 +413,102 @@ ul li {
   overflow: hidden;
 }
 .subscription .subscription-left {
+  display: inline-block;
   margin-top: 111px;
+  width: 550px;
 }
 .subscription .subscription-left img {
   float: left;
 }
-.subscription .subscription-left p {
+.subscription .subscription-left #subscription-left-quote {
+  line-height: 26px;
   margin-left: 28px;
   margin-top: 12px;
+  padding-bottom: 0;
   display: inline-block;
   width: 395px;
   color: #222224;
   font-family: 'Lato';
   font-size: 15px;
   font-style: italic;
-  line-height: 26px;
   letter-spacing: 0.4px;
+}
+.subscription .subscription-left #subscription-left-name {
+  padding: 0;
+  margin-left: 114px;
+  margin-top: 15px;
+  color: #f16d7f;
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+.subscription .subscription-left #subscription-left-name span {
+  padding: 0;
+  color: #222224;
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.subscription .subscription-right {
+  display: inline-block;
+  margin-top: 148px;
+  width: 550px;
+  text-align: center;
+}
+.subscription .subscription-right p {
+  color: #222224;
+  font-family: 'Lato';
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.subscription .subscription-right p span {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 54px;
+  letter-spacing: 0.35px;
+  line-height: 24px;
+}
+.subscription .subscription-right .subscribe-btn {
+  margin-top: 35px;
+}
+.subscription .subscription-right .subscribe-btn .subscribe-btn-left {
+  display: inline-block;
+  width: 282px;
+  height: 46px;
+  background-color: #e1e1e1;
+  border-radius: 23px 0 0 23px;
+  text-align: left;
+  padding-left: 28px;
+}
+.subscription .subscription-right .subscribe-btn .subscribe-btn-left span {
+  line-height: 46px;
+  opacity: 0.67;
+  color: #222224;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.subscription .subscription-right .subscribe-btn .subscribe-btn-right {
+  display: inline-block;
+  width: 104px;
+  height: 46px;
+  background-color: #f16d7f;
+  border-radius: 0 23px 23px 0;
+  margin-left: -6px;
+}
+.subscription .subscription-right .subscribe-btn .subscribe-btn-right span {
+  line-height: 46px;
+  color: #ffffff;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.brandInfoSection {
+  height: 460px;
 }
