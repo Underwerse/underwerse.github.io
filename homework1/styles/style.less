@@ -1,0 +1,118 @@
+@width: 1280px;
+
+html * {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: #445161;
+    font: bold 30px/36px Arial;
+}
+
+.container {
+    &>* {
+        margin: 0 auto;
+        width: @width;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+}
+
+.product {
+    .header {
+        height: 323px;
+        background-color: #445162;
+
+        &>* {
+            display: inline-block;
+        }
+
+        .headerArticle {
+            margin: 50px 0 0 50px;
+            text-align: left;
+
+            h1 {
+                margin-top: -4px;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                color: #ffffff;
+                font: bold 60px/60px Arial, sans-serif;
+                font-size: 60px;
+                font-weight: 400;
+            }
+
+            .headerList {
+                margin: 47px 0 0 35px;
+                list-style-image: url(../img/headerListIcon.png);
+
+                li {
+                    text-decoration: none;
+                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+                    color: #ffffff;
+                    font: normal 20px/36px Arial, sans-serif;
+                }
+            }
+        }
+
+        .headerImage {
+            width: 469px;
+            height: 214px;
+            float: right;
+            margin: 50px 50px;
+            background-color: #ffffff;
+        }
+    }
+    
+    main {
+        &>* {
+            display: block;
+        }
+        .aboutProductArticle {
+            width: @width;
+            height: 345px;
+            background-color: #fff;
+            &>* {
+                display: inline-block;
+            }
+            .aboutProductArticleText {
+                width: 660px;
+                padding: 50px 0 0 50px;
+                h2 {
+                    color: #445161;
+                    font: bold 30px/36px Arial;
+                    margin-bottom: 30px;
+                }
+                p {
+                    color: #445161;
+                    font: normal 16px/24px Arial;
+                    margin-bottom: 20px;
+                }
+            }
+            .aboutProductArticleVideo {
+                float: right;
+                margin: 50px 50px 0 0;
+            }
+        }
+        .productFeatureArticle {
+            height: 366px;
+            text-align: center;
+            h2 {
+                margin-top: 50px;
+            }
+        }
+        .productScreenshots {
+            height: 487px;
+            text-align: center;
+            background-color: #fff;
+            h2 {
+                // margin-top: 50px;
+            }
+        }
+    }
+}
+
+
+
+.contacts {
+
+}

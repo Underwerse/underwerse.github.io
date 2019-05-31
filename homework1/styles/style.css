@@ -1,0 +1,91 @@
+html * {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  color: #445161;
+  font: bold 30px/36px Arial;
+}
+.container > * {
+  margin: 0 auto;
+  width: 1280px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+.product .header {
+  height: 323px;
+  background-color: #445162;
+}
+.product .header > * {
+  display: inline-block;
+}
+.product .header .headerArticle {
+  margin: 50px 0 0 50px;
+  text-align: left;
+}
+.product .header .headerArticle h1 {
+  margin-top: -4px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font: bold 60px/60px Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+.product .header .headerArticle .headerList {
+  margin: 47px 0 0 35px;
+  list-style-image: url(../img/headerListIcon.png);
+}
+.product .header .headerArticle .headerList li {
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font: normal 20px/36px Arial, sans-serif;
+}
+.product .header .headerImage {
+  width: 469px;
+  height: 214px;
+  float: right;
+  margin: 50px 50px;
+  background-color: #ffffff;
+}
+.product main > * {
+  display: block;
+}
+.product main .aboutProductArticle {
+  width: 1280px;
+  height: 345px;
+  background-color: #fff;
+}
+.product main .aboutProductArticle > * {
+  display: inline-block;
+}
+.product main .aboutProductArticle .aboutProductArticleText {
+  width: 660px;
+  padding: 50px 0 0 50px;
+}
+.product main .aboutProductArticle .aboutProductArticleText h2 {
+  color: #445161;
+  font: bold 30px/36px Arial;
+  margin-bottom: 30px;
+}
+.product main .aboutProductArticle .aboutProductArticleText p {
+  color: #445161;
+  font: normal 16px/24px Arial;
+  margin-bottom: 20px;
+}
+.product main .aboutProductArticle .aboutProductArticleVideo {
+  float: right;
+  margin: 50px 50px 0 0;
+}
+.product main .productFeatureArticle {
+  height: 366px;
+  text-align: center;
+}
+.product main .productFeatureArticle h2 {
+  margin-top: 50px;
+}
+.product main .productScreenshots {
+  height: 487px;
+  text-align: center;
+  background-color: #fff;
+}
