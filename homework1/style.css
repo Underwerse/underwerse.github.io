@@ -11,11 +11,18 @@ html * {
   margin: 0 auto;
   width: 1140px;
 }
-.header {
+.header,
+.footer {
   width: inherit;
   height: 100px;
   background-color: #fff;
 }
-.header article {
+.header > *,
+.footer > * {
   width: 1140px;
+}
+.main {
+  width: 1140px;
+  height: 400px;
+  background-color: #fff;
 }

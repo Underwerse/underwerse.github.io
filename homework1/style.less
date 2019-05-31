@@ -15,11 +15,17 @@ html * {
     }
 }
 
-.header {
+.header, .footer {
     width: inherit;
     height: 100px;
     background-color: #fff;
-    article {
+    &>* {
         width: @width;
     }
+}
+
+.main {
+    width: @width;
+    height: 400px;
+    background-color: #fff;
 }
