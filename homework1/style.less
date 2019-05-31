@@ -1,3 +1,25 @@
-html {
-    
+@width: 1140px;
+
+html * {
+    background-color: cyan;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    &>* {
+        margin: 0 auto;
+        width: @width;
+    }
+}
+
+.header {
+    width: inherit;
+    height: 100px;
+    background-color: #fff;
+    article {
+        width: @width;
+    }
 }

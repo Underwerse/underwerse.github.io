@@ -1,0 +1,21 @@
+html * {
+  background-color: cyan;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 0;
+  margin: 0;
+}
+.container > * {
+  margin: 0 auto;
+  width: 1140px;
+}
+.header {
+  width: inherit;
+  height: 100px;
+  background-color: #fff;
+}
+.header article {
+  width: 1140px;
+}
