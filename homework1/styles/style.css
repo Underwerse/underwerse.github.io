@@ -6,6 +6,14 @@ h2 {
   color: #445161;
   font: bold 30px/36px Arial;
 }
+h3 {
+  color: #445161;
+  font: 400 24px/30px Arial;
+}
+p {
+  color: #333333;
+  font: 400 16px/24px Arial;
+}
 .container > * {
   margin: 0 auto;
   width: 1280px;
@@ -69,8 +77,6 @@ h2 {
   margin-bottom: 30px;
 }
 .product main .aboutProductArticle .aboutProductArticleText p {
-  color: #445161;
-  font: normal 16px/24px Arial;
   margin-bottom: 20px;
 }
 .product main .aboutProductArticle .aboutProductArticleVideo {
@@ -82,10 +88,117 @@ h2 {
   text-align: center;
 }
 .product main .productFeatureArticle h2 {
-  margin-top: 50px;
+  padding-top: 50px;
 }
-.product main .productScreenshots {
+.product main .productScreenshotsArticle {
   height: 487px;
+  background-color: #fff;
+}
+.product main .productScreenshotsArticle > h2 {
   text-align: center;
+}
+.product main .productScreenshotsArticle h2 {
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+.product main .productScreenshotsArticle .screenshotArticle {
+  display: inline-block;
+  width: 575px;
+  height: 152px;
+  margin: 0 16px 30px 44px;
+}
+.product main .productScreenshotsArticle .screenshotArticle img {
+  float: left;
+  padding-right: 15px;
+}
+.product main .productScreenshotsArticle .screenshotArticle h3 {
+  margin-bottom: 8px;
+}
+.product main .productScreenshotsArticle .scr2,
+.product main .productScreenshotsArticle .scr4 {
+  margin: 0 0 30px 0;
+}
+.product main .productReviewArticle {
+  height: 424px;
+}
+.product main .productReviewArticle > h2 {
+  text-align: center;
+}
+.product main .productReviewArticle h2 {
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+.product main .productReviewArticle .reviewArticle {
+  display: inline-block;
+  margin: 0 32px 30px 44px;
+  height: 121px;
+}
+.product main .productReviewArticle .reviewArticle > * {
+  display: inline-block;
+}
+.product main .productReviewArticle .reviewArticle img {
+  vertical-align: top;
+  margin-right: 12px;
+}
+.product main .productReviewArticle .reviewArticle .userReview {
+  width: 483px;
+  height: 121px;
+  background: url(../img/reviewBgr.png) no-repeat;
+}
+.product main .productReviewArticle .reviewArticle .userReview p {
+  padding: 14px 0 39px 25px;
+}
+.product main .productReviewArticle .review2,
+.product main .productReviewArticle .review4 {
+  margin: 0 0 30px 0;
+}
+.product main .productPriceArticle {
+  width: 1280px;
+  height: 656px;
+  background-color: #fff;
+  position: relative;
+}
+.product main .productPriceArticle > * {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+.product main .productPriceArticle > h2 {
+  position: inherit;
+  text-align: center;
+}
+.product main .productPriceArticle h2 {
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+.product main .productPriceArticle .priceArticle {
+  width: 300px;
+  background-color: #445162;
+}
+.product main .productPriceArticle .priceArticle h3 {
+  color: #fff;
+  text-align: center;
+}
+.product main .productPriceArticle .priceArticle .priceAmount {
+  width: 300px;
+  height: 50px;
+  background-color: #fff;
+  color: #445162;
+  font: normal 40px/30px 'Arial';
+  text-align: center;
+}
+.product main .productPriceArticle .priceArticle ol {
+  margin: 19px 0 19px 20px;
+}
+.product main .productPriceArticle .priceArticle ol li {
+  margin-left: 20px;
+  color: #ffffff;
+  font: normal 14px/24px 'Arial';
+}
+.product main .productPriceArticle .priceArticle button {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  margin: 20px;
   background-color: #fff;
 }

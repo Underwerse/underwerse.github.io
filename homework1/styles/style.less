@@ -10,6 +10,16 @@ h2 {
     font: bold 30px/36px Arial;
 }
 
+h3 {
+    color: #445161;
+    font: 400 24px/30px Arial;
+}
+
+p {
+    color: #333333;
+    font: 400 16px/24px Arial;
+}
+
 .container {
     &>* {
         margin: 0 auto;
@@ -83,8 +93,6 @@ h2 {
                     margin-bottom: 30px;
                 }
                 p {
-                    color: #445161;
-                    font: normal 16px/24px Arial;
                     margin-bottom: 20px;
                 }
             }
@@ -97,15 +105,119 @@ h2 {
             height: 366px;
             text-align: center;
             h2 {
-                margin-top: 50px;
+                padding-top: 50px;
             }
         }
-        .productScreenshots {
+        .productScreenshotsArticle {
             height: 487px;
-            text-align: center;
+            &>h2 {
+                text-align: center;
+            }
             background-color: #fff;
             h2 {
-                // margin-top: 50px;
+                padding-top: 50px;
+                padding-bottom: 35px;
+            }
+            .screenshotArticle {
+                display: inline-block;
+                width: 575px;
+                height: 152px;
+                margin: 0 16px 30px 44px;
+                img {
+                    float: left;
+                    padding-right: 15px;
+                }
+                h3 {
+                    margin-bottom: 8px;
+                }
+            }
+            .scr2,
+            .scr4 {
+                margin: 0 0 30px 0;
+            }
+        }
+        .productReviewArticle {
+            height: 424px;
+            &>h2 {
+                text-align: center;
+            }
+            h2 {
+                padding-top: 50px;
+                padding-bottom: 35px;
+            }
+            .reviewArticle {
+                display: inline-block;
+                margin: 0 32px 30px 44px;
+                height: 121px;
+                &>* {
+                    display: inline-block;
+                }
+                img {
+                    vertical-align: top;
+                    margin-right: 12px;
+                }
+                .userReview {
+                    width: 483px;
+                    height: 121px;
+                    background: url(../img/reviewBgr.png) no-repeat;
+                    p {
+                    padding: 14px 0 39px 25px;
+                    }
+                }
+            }
+            .review2,
+            .review4 {
+                margin: 0 0 30px 0;
+            }
+        }
+        .productPriceArticle {
+            width: @width;
+            height: 656px;
+            background-color: #fff;
+            position: relative;
+            &>* {
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 50px;
+            }
+            &>h2 {
+                position: inherit;
+                text-align: center;
+            }
+            h2 {
+                padding-top: 50px;
+                padding-bottom: 35px;
+            }
+            .priceArticle {
+                width: 300px;
+                background-color: #445162;
+                h3 {
+                    color: #fff;
+                    text-align: center;
+                }
+                .priceAmount {
+                    width: 300px;
+                    height: 50px;
+                    background-color: #fff;
+                    color: #445162;
+                    font: normal 40px/30px 'Arial';
+                    text-align: center;
+                }
+                ol {
+                    margin: 19px 0 19px 20px;
+                    li {
+                    margin-left: 20px;
+                    color: #ffffff;
+                    font: normal 14px/24px 'Arial';
+                    }
+                }
+                button {
+                    width: 260px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin: 20px;;
+                    background-color: #fff;
+                }
             }
         }
     }
