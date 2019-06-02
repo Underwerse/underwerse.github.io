@@ -263,6 +263,21 @@ p {
 }
 .contacts .contactsFormWrap .contactsInfo {
   flex-basis: 230px;
+  text-align: left;
+}
+.contacts .contactsFormWrap .contactsInfo .contactOption {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.contacts .contactsFormWrap .contactsInfo .contactOption p {
+  color: #fff;
+  font: bolder 16px/24px 'Arial';
+  margin-left: 5px;
+}
+.contacts .contactsFormWrap .contactsInfo .socialButtons img {
+  width: 240px;
+  margin-top: 14px;
 }
 .contacts .copyright {
   margin-top: 20px;
