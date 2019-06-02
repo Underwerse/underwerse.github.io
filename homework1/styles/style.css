@@ -265,10 +265,6 @@ p {
 .contacts .contactsFormWrap .contactsForm form textarea {
   height: 160px;
 }
-.contacts .contactsFormWrap .contactsForm form input[name="submit"] {
-  width: 140px;
-  height: 40px;
-}
 .contacts .contactsFormWrap .contactsForm form * {
   width: 490px;
   margin-bottom: 20px;
@@ -276,6 +272,11 @@ p {
   font: bolder 16px/24px 'Arial';
   padding-left: 10px;
   border-radius: 5px;
+}
+.contacts .contactsFormWrap .contactsForm form input[name="submit"] {
+  width: 140px;
+  height: 40px;
+  padding: 0;
 }
 .contacts .contactsFormWrap .contactsInfo {
   flex-basis: 230px;
