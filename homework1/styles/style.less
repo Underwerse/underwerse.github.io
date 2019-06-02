@@ -100,18 +100,28 @@ p {
             }
         }
         .productFeatureArticle {
-            height: 366px;
+            height: 420px;
             text-align: center;
             h2 {
-                padding-top: 50px;
+                padding: 50px 0 25px 0;
             }
-            .productFeatureWrap ul {
-                margin-left: 91px;
-                list-style-image: url(../img/featureMarker.png);
-                li {
-                    float: left;
+            .productFeatureWrap1,
+            .productFeatureWrap2,
+            .productFeatureWrap3 {
+                display: flex;
+                justify-content: center; 
+                .feature {
+                    flex-basis: 590px;
                     text-align: left;
-                    width: 560px;
+                    display: flex;
+                    margin-bottom: 35px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    p {
+                        margin: -4px 0 0 9px;
+                    }
                 }
             }
         }

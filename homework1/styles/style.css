@@ -83,20 +83,36 @@ p {
   margin: 50px 50px 0 0;
 }
 .product main .productFeatureArticle {
-  height: 366px;
+  height: 420px;
   text-align: center;
 }
 .product main .productFeatureArticle h2 {
-  padding-top: 50px;
+  padding: 50px 0 25px 0;
 }
-.product main .productFeatureArticle .productFeatureWrap ul {
-  margin-left: 91px;
-  list-style-image: url(../img/featureMarker.png);
+.product main .productFeatureArticle .productFeatureWrap1,
+.product main .productFeatureArticle .productFeatureWrap2,
+.product main .productFeatureArticle .productFeatureWrap3 {
+  display: flex;
+  justify-content: center;
 }
-.product main .productFeatureArticle .productFeatureWrap ul li {
-  float: left;
+.product main .productFeatureArticle .productFeatureWrap1 .feature,
+.product main .productFeatureArticle .productFeatureWrap2 .feature,
+.product main .productFeatureArticle .productFeatureWrap3 .feature {
+  flex-basis: 590px;
   text-align: left;
-  width: 560px;
+  display: flex;
+  margin-bottom: 35px;
+}
+.product main .productFeatureArticle .productFeatureWrap1 .feature img,
+.product main .productFeatureArticle .productFeatureWrap2 .feature img,
+.product main .productFeatureArticle .productFeatureWrap3 .feature img {
+  width: 32px;
+  height: 32px;
+}
+.product main .productFeatureArticle .productFeatureWrap1 .feature p,
+.product main .productFeatureArticle .productFeatureWrap2 .feature p,
+.product main .productFeatureArticle .productFeatureWrap3 .feature p {
+  margin: -4px 0 0 9px;
 }
 .product main .productScreenshotsArticle {
   height: 487px;
