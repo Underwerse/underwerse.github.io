@@ -11,8 +11,9 @@ h3 {
   font: 400 24px/30px Arial;
 }
 p {
-  color: #333333;
+  color: #333;
   font: 400 16px/24px Arial;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 .container > * {
   margin: 0 auto;
@@ -44,8 +45,6 @@ p {
   list-style-image: url(../img/headerListIcon.png);
 }
 .product .header .headerArticle .headerList li {
-  text-decoration: none;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font: normal 20px/36px Arial, sans-serif;
 }
@@ -89,6 +88,15 @@ p {
 }
 .product main .productFeatureArticle h2 {
   padding-top: 50px;
+}
+.product main .productFeatureArticle .productFeatureWrap ul {
+  margin-left: 91px;
+  list-style-image: url(../img/featureMarker.png);
+}
+.product main .productFeatureArticle .productFeatureWrap ul li {
+  float: left;
+  text-align: left;
+  width: 560px;
 }
 .product main .productScreenshotsArticle {
   height: 487px;
@@ -154,51 +162,62 @@ p {
 }
 .product main .productPriceArticle {
   width: 1280px;
-  height: 656px;
+  height: 655px;
   background-color: #fff;
-  position: relative;
-}
-.product main .productPriceArticle > * {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 50px;
-}
-.product main .productPriceArticle > h2 {
-  position: inherit;
-  text-align: center;
 }
 .product main .productPriceArticle h2 {
+  text-align: center;
   padding-top: 50px;
-  padding-bottom: 35px;
+  margin-bottom: 25px;
 }
-.product main .productPriceArticle .priceArticle {
+.product main .productPriceArticle .priceArticleWrap {
+  height: 545px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.product main .productPriceArticle .priceArticleWrap .priceArticle {
   width: 300px;
+  margin: 0 45px 50px 0;
   background-color: #445162;
 }
-.product main .productPriceArticle .priceArticle h3 {
+.product main .productPriceArticle .priceArticleWrap .priceArticle h3 {
   color: #fff;
   text-align: center;
+  line-height: 50px;
 }
-.product main .productPriceArticle .priceArticle .priceAmount {
+.product main .productPriceArticle .priceArticleWrap .priceArticle .priceAmount {
   width: 300px;
-  height: 50px;
   background-color: #fff;
   color: #445162;
   font: normal 40px/30px 'Arial';
   text-align: center;
+  line-height: 70px;
+  vertical-align: middle;
 }
-.product main .productPriceArticle .priceArticle ol {
-  margin: 19px 0 19px 20px;
+.product main .productPriceArticle .priceArticleWrap .priceArticle ol {
+  margin: 20px 0 0 20px;
 }
-.product main .productPriceArticle .priceArticle ol li {
+.product main .productPriceArticle .priceArticleWrap .priceArticle ol li {
   margin-left: 20px;
   color: #ffffff;
   font: normal 14px/24px 'Arial';
 }
-.product main .productPriceArticle .priceArticle button {
+.product main .productPriceArticle .priceArticleWrap .priceArticle button {
   width: 260px;
   height: 40px;
   line-height: 40px;
   margin: 20px;
   background-color: #fff;
+  color: #445161;
+  font: bold 18px/18px 'Arial';
+  text-transform: uppercase;
+}
+.product main .productPriceArticle .priceArticleWrap .luxPrice {
+  margin-right: 0;
+}
+.contacts {
+  height: 510px;
+  background-color: #445162;
+  text-align: center;
 }
