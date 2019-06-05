@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/Socialico.eot") format("eot"), url("../fonts/Socialico.woff") format("woff"), url("../fonts/Socialico.ttf") format("truetype"), url("../fonts/Socialico.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 html * {
   padding: 0;
   margin: 0;
@@ -5,6 +11,8 @@ html * {
 h2 {
   color: #445161;
   font: bold 30px/36px 'Arial', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
 }
 h3 {
   color: #445161;
@@ -15,186 +23,175 @@ p {
   font: 400 16px/24px 'Arial', sans-serif;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
-.container > * {
+.container {
   margin: 0 auto;
   width: 1280px;
+  background-color: #fff;
+}
+.container > * {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
+  padding: 50px;
 }
-.product .header {
-  height: 323px;
+.header {
   background-color: #445162;
+  display: flex;
+  justify-content: space-between;
 }
-.product .header > * {
-  display: inline-block;
-}
-.product .header .headerArticle {
-  margin: 50px 0 0 50px;
-  text-align: left;
-}
-.product .header .headerArticle h1 {
+.header .headerTop h1 {
   margin-top: -4px;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font: bold 60px/60px 'Arial', sans-serif;
-  font-size: 60px;
-  font-weight: 400;
 }
-.product .header .headerArticle .headerList {
-  margin: 47px 0 0 35px;
+.header .headerTop .headerList {
+  margin: 25px 0 0 35px;
   list-style-image: url(../img/headerListIcon.png);
 }
-.product .header .headerArticle .headerList li {
+.header .headerTop .headerList li {
   color: #ffffff;
   font: normal 20px/36px 'Arial', sans-serif;
 }
-.product .header .headerImage {
+.header .headerImage {
   width: 469px;
   height: 214px;
-  float: right;
-  margin: 50px 50px;
-  background-color: #ffffff;
+  background: url(../img/headerImage.png) no-repeat center;
 }
-.product main > * {
-  display: block;
+main {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.product main .aboutProductArticle {
-  width: 1280px;
-  height: 345px;
+main > * {
+  margin: -50px -50px 50px -50px;
+  padding: 50px;
+  overflow: none;
   background-color: #fff;
 }
-.product main .aboutProductArticle > * {
-  display: inline-block;
+main .about {
+  display: flex;
+  justify-content: space-between;
 }
-.product main .aboutProductArticle .aboutProductArticleText {
-  width: 660px;
-  padding: 50px 0 0 50px;
-}
-.product main .aboutProductArticle .aboutProductArticleText h2 {
+main .about .aboutLeft h2 {
   color: #445161;
   font: bold 30px/36px 'Arial', sans-serif;
-  margin-bottom: 30px;
-}
-.product main .aboutProductArticle .aboutProductArticleText p {
+  padding-bottom: 0;
   margin-bottom: 20px;
-}
-.product main .aboutProductArticle .aboutProductArticleVideo {
-  float: right;
-  margin: 50px 50px 0 0;
-}
-.product main .productFeatureArticle {
-  height: 420px;
-  text-align: center;
-}
-.product main .productFeatureArticle h2 {
-  padding: 50px 0 25px 0;
-}
-.product main .productFeatureArticle .productFeatureWrap {
-  display: flex;
-  justify-content: center;
-}
-.product main .productFeatureArticle .productFeatureWrap .feature {
-  flex-basis: 590px;
   text-align: left;
-  display: flex;
-  margin: 0 15px 35px 0;
 }
-.product main .productFeatureArticle .productFeatureWrap .feature img {
+main .about .aboutLeft p {
+  padding-right: 50px;
+}
+main .about .aboutRight video[poster] {
+  object-fit: cover;
+}
+main .feature {
+  background-color: #f5f5f5;
+}
+main .feature .featureBoxWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .feature .featureBoxWrap .featureBox {
+  display: flex;
+  justify-content: left;
+  max-width: calc(590px);
+  padding-bottom: 35px;
+}
+main .feature .featureBoxWrap .featureBox p {
+  text-align: left;
+  padding-right: 20px;
+}
+main .feature .featureBoxWrap .featureBox:last-child,
+main .feature .featureBoxWrap .featureBox:nth-last-child(2) {
+  padding-bottom: 0;
+}
+main .feature .featureBoxWrap img {
   width: 32px;
   height: 32px;
 }
-.product main .productFeatureArticle .productFeatureWrap .feature p {
+main .feature .featureBoxWrap p {
   margin: -4px 0 0 9px;
 }
-.product main .productScreenshotsArticle {
-  height: 487px;
-  background-color: #fff;
+main .screenshot .screenshotBoxWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.product main .productScreenshotsArticle > h2 {
-  text-align: center;
+main .screenshot .screenshotBoxWrap .screenshotBox {
+  display: flex;
+  text-align: left;
+  width: calc(585px);
+  padding-bottom: 30px;
 }
-.product main .productScreenshotsArticle h2 {
-  padding-top: 50px;
-  padding-bottom: 35px;
+main .screenshot .screenshotBoxWrap .screenshotBox img {
+  width: 200px;
+  height: 150px;
 }
-.product main .productScreenshotsArticle .screenshotArticle {
-  display: inline-block;
-  width: 575px;
-  height: 152px;
-  margin: 0 16px 30px 44px;
+main .screenshot .screenshotBoxWrap .screenshotBox .screenshotBoxDescription {
+  margin: -4px 16px 0 15px;
 }
-.product main .productScreenshotsArticle .screenshotArticle img {
-  float: left;
-  padding-right: 15px;
+main .screenshot .screenshotBoxWrap .screenshotBox .screenshotBoxDescription h3 {
+  margin-bottom: 6px;
 }
-.product main .productScreenshotsArticle .screenshotArticle h3 {
-  margin-bottom: 8px;
+main .screenshot .screenshotBoxWrap .screenshotBox:last-child,
+main .screenshot .screenshotBoxWrap .screenshotBox:nth-last-child(2) {
+  padding-bottom: 0;
 }
-.product main .productScreenshotsArticle .scr2,
-.product main .productScreenshotsArticle .scr4 {
-  margin: 0 0 30px 0;
+main .review {
+  background-color: #f5f5f5;
 }
-.product main .productReviewArticle {
-  height: 424px;
+main .review .reviewBoxWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.product main .productReviewArticle > h2 {
-  text-align: center;
+main .review .reviewBoxWrap .reviewBox {
+  display: flex;
+  text-align: left;
+  width: calc(576px);
+  padding-bottom: 24px;
 }
-.product main .productReviewArticle h2 {
-  padding-top: 50px;
-  padding-bottom: 35px;
+main .review .reviewBoxWrap .reviewBox img {
+  height: 75px;
 }
-.product main .productReviewArticle .reviewArticle {
-  display: inline-block;
-  margin: 0 32px 30px 44px;
-  height: 121px;
-}
-.product main .productReviewArticle .reviewArticle > * {
-  display: inline-block;
-}
-.product main .productReviewArticle .reviewArticle img {
-  vertical-align: top;
-  margin-right: 12px;
-}
-.product main .productReviewArticle .reviewArticle .userReview {
-  width: 483px;
-  height: 121px;
+main .review .reviewBoxWrap .reviewBox .userReview {
   background: url(../img/reviewBgr.png) no-repeat;
 }
-.product main .productReviewArticle .reviewArticle .userReview p {
-  padding: 14px 0 39px 25px;
+main .review .reviewBoxWrap .reviewBox .userReview p {
+  margin: 8px 20px 15px 27px;
+  font: italic 14px/18px 'Arial', sans-serif;
 }
-.product main .productReviewArticle .review2,
-.product main .productReviewArticle .review4 {
-  margin: 0 0 30px 0;
+main .review .reviewBoxWrap .reviewBox .userReview .author {
+  color: #989898;
 }
-.product main .productPriceArticle {
-  width: 1280px;
-  height: 655px;
-  background-color: #fff;
+main .review .reviewBoxWrap .reviewBox:last-child,
+main .review .reviewBoxWrap .reviewBox:nth-last-child(2) {
+  padding-bottom: 0;
 }
-.product main .productPriceArticle h2 {
-  text-align: center;
-  padding-top: 50px;
-  margin-bottom: 25px;
+main .price {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.product main .productPriceArticle .priceArticleWrap {
-  height: 545px;
+main .price .priceWrap {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
 }
-.product main .productPriceArticle .priceArticleWrap .priceArticle {
+main .price .priceWrap .priceBox {
   width: 300px;
-  margin: 0 45px 50px 0;
+  margin: 0 45px 0 0;
   background-color: #445162;
+  border-radius: 5px;
 }
-.product main .productPriceArticle .priceArticleWrap .priceArticle h3 {
+main .price .priceWrap .priceBox h3 {
   color: #fff;
   text-align: center;
   line-height: 50px;
 }
-.product main .productPriceArticle .priceArticleWrap .priceArticle .priceAmount {
+main .price .priceWrap .priceBox .priceAmount {
   width: 300px;
   background-color: #fff;
   color: #445162;
@@ -203,15 +200,15 @@ p {
   line-height: 70px;
   vertical-align: middle;
 }
-.product main .productPriceArticle .priceArticleWrap .priceArticle ol {
+main .price .priceWrap .priceBox ol {
   margin: 20px 0 0 20px;
 }
-.product main .productPriceArticle .priceArticleWrap .priceArticle ol li {
+main .price .priceWrap .priceBox ol li {
   margin-left: 20px;
   color: #ffffff;
   font: normal 14px/24px 'Arial', sans-serif;
 }
-.product main .productPriceArticle .priceArticleWrap .priceArticle button {
+main .price .priceWrap .priceBox button {
   width: 260px;
   height: 40px;
   line-height: 40px;
@@ -221,18 +218,17 @@ p {
   font: bold 18px/18px 'Arial', sans-serif;
   text-transform: uppercase;
 }
-.product main .productPriceArticle .priceArticleWrap .luxPrice {
+main .price .priceWrap .priceBox:last-child {
   margin-right: 0;
 }
 .contacts {
-  height: 510px;
   background-color: #445162;
   text-align: center;
+  margin: -50px;
 }
 .contacts h2 {
   color: #fff;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding: 50px 0 30px 0;
 }
 .contacts .contactsFormWrap {
   display: flex;
@@ -284,9 +280,9 @@ p {
   font: bolder 16px/24px 'Arial', sans-serif;
   margin-left: 5px;
 }
-.contacts .contactsFormWrap .contactsInfo .socialButtons img {
-  width: 240px;
-  margin-top: 14px;
+.contacts .contactsFormWrap .contactsInfo .socialIcons {
+  font: 60px/44px 'SocialIco', sans-serif;
+  color: #fff;
 }
 .contacts .copyright {
   margin-top: 20px;
