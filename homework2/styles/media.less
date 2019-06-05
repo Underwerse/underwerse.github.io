@@ -123,7 +123,13 @@
 					border-style: double;
 					border-color: #445162;
 					margin: 0 0 50px 0;
-
+					text-align: center;
+					ol {
+						display: inline-block;
+						margin: 0 auto;
+						margin-top: 20px;
+						text-align: left;
+					}
 					.priceAmount {
 						max-width: 100%;
 					}
@@ -139,8 +145,22 @@
 
 @media (max-width: 600px) {
 	.container {
-		&>* {
+		.header {
 			padding: 50px 20px;
+		}
+		main {
+			.about,
+			.feature,
+			.screenshot,
+			.review,
+			.price {
+				padding: 50px 20px;
+			}
+		}
+		footer {
+			.contacts {
+				padding: 50px 20px;
+			}
 		}
 	}
 	body {
@@ -209,6 +229,7 @@
 
 	.contacts {
 		.contactsFormWrap {
+			padding: inherit 0;
 			.contactsForm {
 				width: 100%;
 			}
