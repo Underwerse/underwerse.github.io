@@ -137,7 +137,12 @@
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
+	.container {
+		&>* {
+			padding: 50px 20px;
+		}
+	}
 	body {
 		width: 1vp;
 	}
@@ -159,11 +164,77 @@
 		max-width: calc(1vp - 20px);
 	}
 
+	main {
+		.about {
+			.aboutRight {
+				video {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.review {
+			.reviewBoxWrap {
+				.reviewBox {
+					width: 100%;
+				}
+			}
+		}
+		.screenshot {
+			.screenshotBoxWrap {
+				.screenshotBox {
+					width: 100%;
+					flex-direction: column;
+					align-items: center;
+					.screenshotBoxDescription {
+						h3 {
+							text-align: center;
+							margin-top: 20px;
+						}
+						p {
+							text-align: justify;
+						}
+					}
+				}
+			}
+		}
+		.price {
+			.priceWrap {
+				.priceBox {
+					width: 100%;
+				}
+			}
+		}
+	}
+
 	.contacts {
 		.contactsFormWrap {
 			.contactsForm {
-				& form {
-					width: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		.review {
+			.reviewBoxWrap {
+				.reviewBox {
+					flex-direction: column;
+					img {
+						width: 75px;
+						margin-bottom: 20px;
+					}
+					.userReview {
+						.citeAddon {
+							top: -10px;
+							left: 30px;
+						}
+						.cite {
+							margin-left: 0;
+						}
+					}
 				}
 			}
 		}
