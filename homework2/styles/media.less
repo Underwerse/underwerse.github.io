@@ -1,0 +1,154 @@
+@media (max-width: 900px) {
+	.header {
+		flex-flow: column;
+		align-items: center;
+
+		.headerTop {
+			margin-bottom: 20px;
+		}
+
+		.headerImage {
+			margin-left: 0;
+		}
+	}
+
+	main {
+
+		.about,
+		.feature .featureBoxWrap,
+		.screenshot .screenshotBoxWrap,
+		.review .reviewBoxWrap {
+			flex-flow: column;
+			align-items: center;
+		}
+
+		.about {
+			.aboutLeft {
+				margin-bottom: 30px;
+
+				h2 {
+					text-align: center;
+				}
+
+				p {
+					text-align: justify;
+					padding-right: 0;
+				}
+			}
+		}
+
+		.feature {
+			.featureBoxWrap {
+				.featureBox:nth-last-child(2) {
+					padding-bottom: 35px;
+				}
+			}
+		}
+
+		.screenshot {
+			.screenshotBoxWrap {
+				.screenshotBox:nth-last-child(2) {
+					padding-bottom: 35px;
+				}
+			}
+		}
+
+		.review {
+			.reviewBoxWrap {
+				.reviewBox:nth-last-child(2) {
+					padding-bottom: 24px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	main {
+		.price {
+			.priceWrap {
+				flex-wrap: wrap;
+
+				.priceBox {
+					width: 40%;
+					margin: 0 30px;
+				}
+
+				.priceBox:last-child {
+					margin: 30px 0 0 0;
+				}
+			}
+		}
+	}
+
+	footer {
+		.contacts {
+			.contactsFormWrap {
+				flex-direction: column;
+				align-items: center;
+				padding: 0 50px;
+
+				.contactsForm {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.header {
+		.headerTop {
+			h1 {
+				font: normal 50px/50px 'Arial', sans-serif;
+				;
+			}
+		}
+	}
+
+	main {
+		.price {
+			.priceWrap {
+				flex-direction: column;
+				align-items: center;
+
+				.priceBox {
+					width: 80%;
+					border-style: double;
+					border-color: #445162;
+					margin: 0 0 50px 0;
+
+					.priceAmount {
+						max-width: 100%;
+					}
+				}
+
+				.priceBox:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	body {
+		width: 1vp;
+	}
+	.header {
+		.headerTop {
+			padding: 0 20px;
+			h1 {
+				font: normal 40px/40px 'Arial', sans-serif;
+				text-align: center;
+			}
+			.headerList li {
+				font: normal 16px/30px 'Arial', sans-serif;
+			}
+		}
+	}
+	h2 {
+		font-size: 26px;
+		max-width: calc(1vp - 20px);
+	}
+}
