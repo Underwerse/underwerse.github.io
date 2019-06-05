@@ -157,7 +157,7 @@ main .review .reviewBoxWrap .reviewBox {
   padding-bottom: 24px;
 }
 main .review .reviewBoxWrap .reviewBox img {
-  height: 75px;
+  max-height: 75px;
 }
 main .review .reviewBoxWrap .reviewBox .userReview {
   background: url(../img/reviewBgr.png) no-repeat;
