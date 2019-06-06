@@ -1,0 +1,42 @@
+@max-width: 1920px;
+@width: 1210px;
+
+html * {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: @width;
+	margin: 0 auto;
+	&>* {
+		border: 1px solid pink;
+	}
+}
+
+header {
+	width: @max-width;
+	padding: 0 355px;
+	background: url(../img/headerBg.png) no-repeat;
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		margin: 15px 0 0 12px;
+	}
+	.navbar {
+		display: flex;
+		.nav {
+			ul {
+				display: flex;
+				li {
+					list-style-type: none;
+					a {
+						text-decoration: none;
+						padding: 0 20px;
+						line-height: 29px;
+					}
+				}
+			}
+		}
+	}
+}

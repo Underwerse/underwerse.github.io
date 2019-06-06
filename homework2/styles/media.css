@@ -110,9 +110,6 @@
   .container footer .contacts {
     padding: 50px 20px;
   }
-  body {
-    width: 1vp;
-  }
   .header .headerTop {
     padding: 0 20px;
   }
@@ -125,7 +122,6 @@
   }
   h2 {
     font-size: 26px;
-    max-width: calc(-19vp);
   }
   main .about .aboutRight video {
     width: 100%;
@@ -148,9 +144,6 @@
   }
   main .price .priceWrap .priceBox {
     width: 100%;
-  }
-  .contacts .contactsFormWrap {
-    padding: inherit 0;
   }
   .contacts .contactsFormWrap .contactsForm {
     width: 100%;
