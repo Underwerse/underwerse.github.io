@@ -78,7 +78,6 @@ main {
 	&>* {
 		margin: -50px -50px 50px -50px;
 		padding: 50px;
-		overflow: none;
 		background-color: #fff;
 	}
 
@@ -99,10 +98,6 @@ main {
 				padding-right: 50px;
 			}
 		}
-
-		// .aboutRight video[poster] {
-		// 	object-fit: cover;
-		// }
 	}
 
 	.feature {
@@ -183,7 +178,8 @@ main {
 				width: calc(0.5*@width - 64px);
 				padding-bottom: 24px;
 				img {
-					max-height: 75px;
+					width: 75px;
+					height: 75px;
 				}
 				.userReview {
 					position: relative;
