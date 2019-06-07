@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 200vh;
+  overflow-x: hidden;
+}
+body video,
+body .videoIn {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center center;
+}
+body .videoIn {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.6;
+}
+main .header {
+  color: red;
+}
