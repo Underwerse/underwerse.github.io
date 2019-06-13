@@ -337,11 +337,20 @@
 			</div>
 			<div class="footerColumn4 footerColumn">
 				<h3>Enquiry Form</h3>
-				<form method="POST">
-					<input type="text" required placeholder="Name">
-					<input type="phone" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="Phone">
-					<textarea name="textarea" id="text" cols="30" rows="10" placeholder="Message"></textarea>
-					<button class="button">Send</button>
+				<form class="feedbackForm">
+					<div class="formGroup">
+						<input class="formInput" type="text" placeholder=" ">
+						<label class="formLabel">Name</label>
+					</div>
+					<div class="formGroup">
+						<input class="formInput" type="phone" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder=" ">
+						<label class="formLabel">Email</label>
+					</div>
+					<div class="formGroup">
+						<textarea class="formInput textarea" name="textarea" id="text" cols="30" rows="10" placeholder=" "></textarea>
+						<label class="formLabel">Message</label>
+					</div>
+					<button class="formButton">Send</button>
 				</form>
 			</div>
 		</div>
