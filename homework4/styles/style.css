@@ -462,6 +462,7 @@ footer .container .footerColumn1 .footerColumnWrap {
   align-items: flex-start;
   justify-content: center;
   font-size: 32px;
+  grid-row-gap: 50px;
 }
 footer .container .footerColumn1 .socials * {
   color: #fff;
