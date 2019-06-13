@@ -315,7 +315,7 @@ main .howWork .container .howCase .caseWrap .case blockquote h3 {
 main .howWork .container .howCase .caseWrap .case blockquote time,
 main .howWork .container .howCase .caseWrap .case blockquote cite {
   color: #0087be;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.38px;
@@ -460,7 +460,6 @@ footer .container .footerColumn1 .footerColumnWrap {
   grid-template-columns: 70px 1fr;
   align-items: flex-start;
   justify-content: center;
-  row-gap: 50px;
   font-size: 32px;
 }
 footer .container .footerColumn1 .socials * {
