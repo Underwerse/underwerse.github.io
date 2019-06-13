@@ -33,6 +33,7 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .3s;
 }
 .button:hover {
   background-color: #49acdd;
@@ -542,10 +543,14 @@ footer .container .footerColumn4 .feedbackForm .formButton {
   outline: none;
   transition: .3s;
   cursor: pointer;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 footer .container .footerColumn4 .feedbackForm .formButton:focus,
 footer .container .footerColumn4 .feedbackForm .formButton:hover {
-  background-color: #0088be9f;
+  background-color: #49acdd;
 }
 footer .footerBottom {
   background-color: #1a1a1a;
