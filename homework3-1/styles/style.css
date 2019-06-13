@@ -1,17 +1,20 @@
 body {
   padding: 0;
   margin: 0;
-  min-height: 200vh;
   overflow-x: hidden;
+  background-color: rgba(66, 51, 51, 0.5);
 }
-body video,
-body .videoIn {
+body .bgVideo {
+  z-index: 1;
+}
+body .bgVideo video,
+body .bgVideo .videoIn {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
   object-position: center center;
 }
-body .videoIn {
+body .bgVideo .videoIn {
   background-color: #000;
   position: absolute;
   top: 0;
@@ -19,6 +22,28 @@ body .videoIn {
   z-index: 2;
   opacity: 0.6;
 }
-main .header {
-  color: red;
+.header {
+  z-index: 2;
+  position: absolute;
+  top: calc(15vh);
+  left: calc(25vw);
+}
+.formReg {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(42, 42, 42, 0.5);
+  color: #fff;
+}
+.carouselMain {
+  margin-top: -6px;
+  max-height: 100vh;
+}
+.footer {
+  line-height: 20px;
+}
+@media (max-width: 576px) {
+  .header {
+    top: calc(5vh);
+    left: 0;
+  }
 }
