@@ -5,8 +5,6 @@
 	padding: 0;
 }
 
-
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	// overflow-x: hidden;
@@ -85,6 +83,7 @@ header {
 			}
 		}
 	}
+
 	.headerDownLine {
 		height: 99px;
 		display: flex;
@@ -118,11 +117,15 @@ header {
 			}
 		}
 	}
+
 	.headerPromo {
 		display: flex;
 		justify-content: center;
 		height: 640px;
-		background: url(../img/headerPromo.png) no-repeat center;
+		background: url(../img/headerPromoBgrSpot.png) 
+								10% no-repeat,
+								url(../img/headerPromoBgrMain.png) 
+								center no-repeat;
 		.container {
 			display: inline-block;
 			position: relative;
@@ -205,6 +208,7 @@ main {
 			}
 		}
 	}
+
 	.chooseReasons {
 		.container {
 			display: grid;
@@ -275,9 +279,15 @@ main {
 			}
 		}
 	}
+
 	.statistics {
 		height: 592px;
-		background: url(../img/statisticsBgr.png) no-repeat center;
+		max-width: 1600px;
+		margin: 0 auto;
+		background: url(../img/statisticsBgrMain.png)
+								no-repeat center, 
+							#0087be no-repeat center;
+		background-blend-mode: multiply;
 		.container {
 			display: grid;
 			height: inherit;
@@ -313,17 +323,25 @@ main {
 			}
 		}
 	}
+
 	.howWork {
-		height: 893px;
+		height: 798px;
+		padding-top: 95px;
 		.container {
 			height: inherit;
 			display: grid;
 			grid-template-columns: 715px 1fr;
 			grid-gap: 60px;
-			padding-top: 95px;
 			.howCase {
 				h2 {
-					padding-bottom: 30px;
+					padding-bottom: 16px;
+				}
+				p {
+					width: 650px;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+					padding-bottom: 44px;
 				}
 				.caseWrap {
 					display: flex;
@@ -331,15 +349,238 @@ main {
 					.case {
 						blockquote {
 							width: 325px;
+							h3 {
+								color: #6f6f6e;
+								font-family: 'Montserrat', sans-serif;
+								font-size: 20px;
+								font-weight: 700;
+								letter-spacing: -1.21px;
+								padding: 24px 0 6px 0;
+							}
+							time,
+							cite {
+								color: #0087be;
+								font-family: Montserrat;
+								font-size: 15px;
+								font-weight: 700;
+								letter-spacing: -0.38px;
+							}
+							p {
+								width: 325px;
+								padding-top: 14px;
+								line-height: 30px;
+							}
 						}
 					}
 				}
 			}
 			.creative {
 				h2 {
-					padding-bottom: 30px;
+					padding-bottom: 16px;
+				}
+				p {
+					width: 410px;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+					padding-bottom: 44px;
+				}
+				audio {
+					width: 422px;
+					padding-bottom: 12px;
 				}
 			}
+		}
+	}
+
+	.gallery {
+		height: 826px;
+		max-width: 1600px;
+		margin: 0 auto;
+		background: url(../img/galleryBgrMain.png) 
+								no-repeat center,
+								#38b69e;
+		background-blend-mode: multiply;
+		.container {
+			h2 {
+				color: #fff;
+				text-align: center;
+				padding: 90px 0 34px 0;
+				
+			}
+			p {
+				color: #fff;
+				line-height: 30px;
+				text-align: center;
+				padding-bottom: 50px;
+			}
+			.pictures {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				grid-auto-flow: column;
+				align-items: center;
+				grid-gap: 38px;
+				padding: 0 40px;
+			}
+		}
+	}
+
+	.team {
+		height: 917px;
+		.container {
+			h2 {
+				padding: 144px 0 40px 0;
+				color: #494949;
+				text-align: center;
+			}
+			&>p {
+				text-align: center;
+				line-height: 30px;
+				padding-bottom: 80px;
+			}
+			.members {
+				display: grid;
+				grid-template-rows: 1fr;
+				grid-template-columns: repeat(4, 1fr);
+				.member {
+					text-align: center;
+					img {
+						padding-bottom: 25px;
+					}
+					h3 {
+						color: #6f6f6e;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 25px;
+						font-weight: 500;
+						padding-bottom: 10px;
+					}
+					p {
+						color: #6f6f6e;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 18px;
+						font-weight: 500;
+						letter-spacing: -1.09px;
+						padding-bottom: 28px;
+					}
+					.memberSocials a {
+						color: #0087be;
+						font-family: "Font Awesome";
+						font-size: 25px;
+						font-weight: 400;
+						letter-spacing: 2.8px;
+						padding: 0 3px;
+					}
+				}
+			}
+		}
+	}
+
+	.specialOffer {
+		background-color: #e2e2e2;
+		.container {
+			text-align: center;
+			h3 {
+				display: inline-block;
+				color: #494949;
+				font-size: 30px;
+				font-weight: 700;
+				line-height: 176px;
+				vertical-align: middle;
+			}
+			.button {
+				width: 192px;
+				height: 54px;
+				display: inline-block;
+				margin-left: 77px;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #171717;
+	.container {
+		padding-top: 105px;
+		display: grid;
+		grid-template-rows: minmax(521px, auto);
+		grid-template-columns: 
+			minmax(224px, auto) minmax(132px, auto) 
+			minmax(188px, auto) minmax(234px, auto);
+		justify-content: space-between;
+		color: #fff;
+		h3 {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+			letter-spacing: 0.55px;
+			padding-bottom: 66px;
+		}
+		.footerColumn1 {
+			color: #fff;
+			.footerColumnWrap {
+				display: grid;
+				grid-template-rows: repeat(3, 1fr);
+				grid-template-columns: 70px 1fr;
+				align-items: flex-start;
+				justify-content: center;
+				row-gap: 50px;
+				font-size: 32px;
+			}
+			.socials * {
+				color: #fff;
+				font-size: 22px;
+				margin-right: 10px;
+			}
+			.socials {
+				padding-top: 60px;
+			}
+		}
+		.footerColumn2,
+		.footerColumn3  {
+			ul {
+				padding-left: 24px;
+				list-style-image: url(../img/footerListMarker.png);
+				li {
+					padding: 0 0 16px 10px;
+					a {
+						text-decoration: none;
+						color: inherit;
+					}
+				}
+			}
+		}
+		.footerColumn:not(.footerColumn4) h3 {
+			text-align: center;
+		}
+		.footerColumn4 {
+			form > * {
+				width: 100%;
+				background: none;
+				border: none;
+				border-bottom: 1px solid rgba(194, 194, 194, 0.42);
+				display: block;
+				color: rgba(255, 255, 255, .51);
+				font-family: "Open Sans", sans-serif;
+				font-size: 16px;
+				font-weight: 400;
+				letter-spacing: 0.4px;
+				padding-bottom: 8px;
+				outline: none;
+				input {
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	.footerBottom {
+		background-color: #1a1a1a;
+		height: 117px;
+		p {
+			text-align: center;
+			line-height: 117px;
+			color: #615555;
 		}
 	}
 }
