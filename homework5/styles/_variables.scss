@@ -1,40 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap');
 
-$widthContainer: 1170px;
-$fontFamilyHeaders: 'Raleway', sans-serif;
-$fontFamilyText: 'Montserrat', sans-serif;
-$bgrColor: #fbfaf8;
+$wContainer: 1170px;
 
-%h2Style {
-	color: #555555;
-	font-family: $fontFamilyHeaders;
+$ffH: 'Raleway', sans-serif;
+$ffP: 'Montserrat', sans-serif;
+
+$bgColor: #fbfaf8;
+$colActive: #c7b299;
+$colH: #555555;
+$colP: #8c8c8c;
+
+
+%h2 {
+	color: $colH;
+	font-family: $ffH;
 	font-weight: 600;
 	font-size: 30px;
 	font-weight: 400;
 }
 
-%pDefaultStyle {
-	color: #8c8c8c;
-	font-family: $fontFamilyText;
+%p14 {
+	color: $colP;
+	font-family: $ffP;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 24px;
 }
 
-%pHeaderStyle {
-	color: #8c8c8c;
-	font-family: $fontFamilyText;
+%p16 {
+	color: $colP;
+	font-family: $ffP;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 28px;
 }
 
-%buttonStyle {
+%btn {
 	width: 170px;
 	height: 50px;
 	text-align: center;
 	color: #fff;
-	font-family: $fontFamilyHeaders;
+	font-family: $ffH;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 23px;
@@ -43,11 +49,11 @@ $bgrColor: #fbfaf8;
 	border-radius: 3px;
 	background-color: #998675;
 	outline: none;
-	transition:	.3s;
-	//background-color: #111111;
+	transition:	.2s;
 	&:hover,
 	&:active {
 		background-color: darken(#998675, 20%);
 		cursor: pointer;
+		transform: scale(1.05, 1.05);
 	}
 }
