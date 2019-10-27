@@ -14,3 +14,6 @@
 [Lesson 4](https://underwerse.github.io/homework4/ "Домашнее задание к 4 уроку") - Верстка макета мед. клиники на grid и работа с фоном
 
 [Lesson 5](https://underwerse.github.io/homework5/ "Домашнее задание к 5 уроку") - Верстка нового макета Waxom на grid с адаптацией
+
+
+[nava](https://underwerse.github.io/nava/ "Макет nava") - Верстка нового макета nava на grid без адаптации
