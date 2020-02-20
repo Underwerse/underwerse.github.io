@@ -1,0 +1,43 @@
+.cart {
+  width: 400px;
+  padding: 10px;
+}
+
+.productRemoveBtn:hover {
+  cursor: pointer;
+}
+
+.product {
+  border: 1px solid yellowgreen;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  display: grid;
+}
+
+.product img {
+  padding: 20px 0;
+  display: block;
+  margin: auto;
+}
+
+.product p {
+  padding: 0;
+  margin: 0;
+}
+
+.product .descriptionBtn {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+
+.product .descriptionBtn:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

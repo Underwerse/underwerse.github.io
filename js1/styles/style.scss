@@ -1,0 +1,35 @@
+.cart {
+	width: 400px;
+	padding: 10px;
+}
+
+.productRemoveBtn:hover {
+	cursor: pointer;
+}
+
+.product {
+	border: 1px solid yellowgreen;
+	height: 300px;
+	display: grid;
+	text-align: center;
+	display: grid;
+	img {
+		padding: 20px 0;
+		display: block;
+		margin: auto;
+	}
+	p {
+		padding: 0;
+		margin: 0;
+	}
+	.descriptionBtn {
+		align-self: end;
+		width: 100%;
+		height: 30px;
+		border: none;
+		outline: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
