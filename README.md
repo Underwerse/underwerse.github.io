@@ -1,5 +1,5 @@
 # Pavel Chernoff
-HTML3 / CSS5
+HTML3 / CSS5 / JS
 
 [task 1](https://underwerse.github.io/html1/ "Core i9") - Core i9 tpl
 
