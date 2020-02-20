@@ -15,4 +15,4 @@ HTML3 / CSS5
 
 [task 7](https://underwerse.github.io/js1/ "JS1 - shop with cart") - Shop tpl with cart (es5)
 
-
+[task 8](https://underwerse.github.io/js2/ "Slider with animation") - Slider with js animation
