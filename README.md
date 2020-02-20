@@ -13,6 +13,6 @@ HTML3 / CSS5
 
 [task 6](https://underwerse.github.io/html6/ "EcoSibToys commercial") - EcoSibToys commercial
 
-[task 7](https://underwerse.github.io/html7/ "___") - 
+[task 7](https://underwerse.github.io/js1/ "JS1 - shop with cart") - Shop tpl with cart (es5)
 
 
