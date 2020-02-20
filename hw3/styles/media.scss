@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+	.container {
+		padding: 0 10px;
+	}
+	header {
+		.container {
+			.navigation {
+				padding-top: 10px;
+				display: block;
+				text-align: center;
+
+				.navbar {
+					padding-top: 15px;
+					text-align: center;
+
+					a {
+						padding: 0 15px 0 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.projects {
+		.container .projectSwitcher {
+			grid-template-columns: 70px 100px 90px 90px 100px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.projects {
+		.container .projectSwitcher {
+			grid-template-columns: 1fr;
+		}
+	}
+}
