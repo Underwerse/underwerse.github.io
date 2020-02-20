@@ -1,19 +1,18 @@
 # Pavel Chernoff
-Домашние задания по курсу HTML5/CSS3
+HTML3 / CSS5
 
-[Lesson 1](https://underwerse.github.io/homework1/ "Домашнее задание к 1 и 2 уроку") - Верстка с семантическими элементами
+[task 1](https://underwerse.github.io/hw1/ "Core i9") - Core i9 tpl
 
-[Lesson 2](https://underwerse.github.io/homework2/ "Домашнее задание к 1 и 2 уроку") - Адаптивная верстка макета из homework1
+[task 2](https://underwerse.github.io/hw2/ "Video bgr") - Video bgr
 
-[Lesson 2 доп.](https://underwerse.github.io/homework2-1/ "Домашнее задание ко 2 уроку") - Верстка дополнительного макета
+[task 3](https://underwerse.github.io/hw3/ "Waxom Portfolio PSD") - Waxom tpl
 
-[Lesson 3](https://underwerse.github.io/homework3/ "Домашнее задание к 3 уроку") - Работа с тегом video
+[task 4](https://underwerse.github.io/hw4/ "Care Point") - Care Point best doctor tpl
 
-[Lesson 3 доп.](https://underwerse.github.io/homework3-1/ "Домашнее задание к 3 уроку") - Верстка дополнительного макета с фоновым видео
+[task 5](https://underwerse.github.io/hw5/ "NAVA Reserve a boat") - Reserve a boat tpl
 
-[Lesson 4](https://underwerse.github.io/homework4/ "Домашнее задание к 4 уроку") - Верстка макета мед. клиники на grid и работа с фоном
+[task 6](https://underwerse.github.io/hw6/ "EcoSibToys commercial") - EcoSibToys commercial
 
-[Lesson 5](https://underwerse.github.io/homework5/ "Домашнее задание к 5 уроку") - Верстка нового макета Waxom на grid с адаптацией
+[task 7](https://underwerse.github.io/hw7/ "___") - 
 
 
-[nava](https://underwerse.github.io/nava/ "Макет nava") - Верстка нового макета nava на grid без адаптации
