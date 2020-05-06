@@ -151,6 +151,8 @@
   text-align: center;
   border-radius: 5px;
   border: 1px solid #f9fafe;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .header .container .menu .signUpBtn:hover {
@@ -326,7 +328,7 @@
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "dest1 dest1 dest2" "dest3 dest4 dest5";
+      grid-template-areas: "dest1 dest1 dest2" "dest3 dest4 dest5";
   gap: 32px;
 }
 
